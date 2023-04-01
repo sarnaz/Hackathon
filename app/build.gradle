@@ -6,6 +6,7 @@ plugins {
 android {
     namespace 'com.mastercoding.hackathonapp'
     compileSdk 33
+    compileSdkPreview "UpsideDownCake"
 
     defaultConfig {
         applicationId "com.mastercoding.hackathonapp"

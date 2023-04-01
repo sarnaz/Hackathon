@@ -1,4 +1,13 @@
 package com.mastercoding.hackathonapp.ui.fragments
 
-class ScannerFragment {
+import android.os.Bundle
+import com.mastercoding.hackathonapp.R
+
+class ScannerFragment : BaseActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.scanner_fragment)
+        setupBottomNavigationView()
+
+    }
 }
