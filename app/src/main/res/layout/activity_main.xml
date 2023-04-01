@@ -6,14 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.MainActivity">
 
-    <Button
-        android:id="@+id/btn"
+    <TextView
+        android:id="@+id/scanner_scan_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:maxWidth="350sp"
+        android:text="@string/mainActivity_txt"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:menu="@menu/bottom_navbar_menu"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
